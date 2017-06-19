@@ -1,0 +1,1 @@
+define({"button.addhr.tooltip": "插入一条水平线"});

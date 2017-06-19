@@ -1,0 +1,14 @@
+/**
+ * blueprint变更记录
+ * create time: 2008-11-19 上午10:32:55
+ * @version $Id: changelog.txt 4 2012-07-18 06:40:23Z liqt $
+ */
+
+ [符号说明]
+-去除（比如bug） +增加（一些功能或其它） *修改（现有内容等，bug除外）
+
+[顺序说明]
+最新的改动放在最前列。
+
+[2011-08-10]liqt
+* 修改screen.css body字体: font-family: 'Helvetica Neue',Helvetica,Arial,Sans-serif;

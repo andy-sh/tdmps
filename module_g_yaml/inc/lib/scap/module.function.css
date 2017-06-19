@@ -1,0 +1,20 @@
+/**
+ * css模块:功能性样式集合
+ * 
+ * @version $Id: module.function.css 482 2013-05-04 10:20:28Z liqt $
+ * @creator liqt @ 2013-03-30 11:36:37 by caster0.0.3
+ */
+@media all {
+    /*隐藏dom*/
+    .scap-hide {
+        display: none !important;
+    }
+    
+    /*自动截取一行的字符*/
+    .scap-line-truncate {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+    }
+}

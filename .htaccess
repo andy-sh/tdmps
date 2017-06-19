@@ -1,0 +1,15 @@
+Options -Indexes
+
+RewriteEngine On
+
+RewriteRule ^login\/?$ ?m=module_basic.ui.login [NC,QSA]
+RewriteRule ^logout\/?$ ?m=module_basic.ui.logout [NC,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{QUERY_STRING} m=module_
+RewriteRule ^([^/]*)$ base/route/route.php [QSA,PT,L]
+
+<FilesMatch ".(txt|inc.php)$">
+ Order allow,deny
+ Deny from all
+</FilesMatch>

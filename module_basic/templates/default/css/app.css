@@ -1,0 +1,331 @@
+/**
+ * description: 为系统的应用模块定义的一些样式
+ * create time: 2006-8-10 10:32:53
+ * @version $Id: app.css 4 2012-07-18 06:40:23Z liqt $
+ * @author LiQintao(leeqintao@gmail.com)
+ */
+
+/*input/textarea样式定义[start]*/
+
+textarea
+{
+	font-size:12px;
+	width:98.55%;
+	border-style:inset;
+	border:1px solid #BBBBBB;
+	
+	/*IE下内容不超出默认也显示滚动条, 加此句则不显示*/
+	overflow:auto;
+}
+
+input.input_submit,input.input_button {
+	font-size: 12px;
+	padding: 3px 9px;
+	letter-spacing: 2px;
+}
+
+/**** 创建页面的表单样式[start] ****/
+.create_table th, .newusertable th, .newusertable td {
+	text-align:left;
+	padding:4px;
+	nowrap:nowrap;
+	white-space:nowrap;
+	line-height:22px;
+}
+
+input.text, .create_table input.file, .newusertable input.text {
+	-moz-border-radius:4px;
+	border-radius:4px;
+	font-size:12px;
+	border: 1px solid #BBBBBB;
+	background-color : transparent;
+	padding:4px;
+}
+
+input.readonly {color:#666}
+
+.create_table input.upload_file{
+	/*  '\9'区别所有ie和非ie */
+	border: 1px solid #BBBBBB \9;
+	font-size:12px \9;
+	padding: 4px \9;
+	background-color : transparent \9;
+}
+
+.create_table input.upload_file:focus{
+	/*  '\9'区别所有ie和非ie */
+	border: 1px solid #E33 \9;
+	background-color : #FFF2F2\9;
+}
+
+select {
+	-moz-border-radius:4px;
+	border-radius:4px;
+	font-size:12px;
+	border: 1px solid #BBBBBB;
+	background-color : transparent;
+	padding:4px;
+}
+
+select>option {
+	line-height:12px;
+	font-size:12px;
+}
+
+input.text:focus, .create_table input.file:focus, .newusertable input.text:focus, select:focus {
+	border: 1px solid #E33;
+	background-color : #FFF2F2;
+}
+
+textarea, .newusertable textarea
+{
+	-moz-border-radius:4px;
+	border-radius:4px;
+	/* width: auto; */
+	border-style:inset;
+	border:1px solid #BBBBBB;
+	padding:4px;
+	font-size:12px;
+	
+	/*禁止chrome改变textarea大小*/
+	resize:none;
+	
+	/*IE下内容不超出默认也显示滚动条, 加此句则不显示*/
+	overflow:auto;
+}
+
+textarea:focus, .newusertable textarea:focus {
+	border: 1px solid #E33;
+	background-color : #FFF2F2;
+}
+
+/**** 创建页面的表单样式[end] ****/
+
+.readonly {
+	background: url(images/lock.gif) transparent no-repeat right;
+}
+
+.required {
+	background: url(images/require.gif) transparent no-repeat right;
+}
+/*input/textarea样式定义[end]*/
+
+div#app_content table {
+	font-size: 12px;
+	table-layout: auto;
+	margin: 0 auto;/*居中*/
+}
+
+/* 索引表格格式*/
+table.indextable {
+	border: 0px solid #8C8EA3;
+	font-size: 12px;
+	table-layout: fixed;
+	border-collapse: separate;
+	background-color: #F7F7F7;
+	margin: 0 auto;/*居中*/
+}
+
+table.indextable .data a{
+	text-decoration:none;
+}
+
+table.indextable .head {
+	background-color: #EBEADB;
+	font-weight: bold;
+}
+
+table.indextable .head a {
+	text-decoration:none;
+}
+
+table.indextable .title{
+	background-color: #8C8EA3;
+}
+
+table.indextable .tip{
+	color: #fff;
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+/*设置列宽行的显示*/
+table.indextable .set_width
+{
+	border:0px;
+	padding:0px;
+	margin:0px;
+	height:0px;
+	background-color:#00FF00;
+}
+
+table.indextable .set_width td
+{
+	line-height:0px;
+	font-size:0px;
+	border:0px;
+	padding:0px;
+	margin:0px;
+	height:0px;
+}
+
+/* 显示提示信息表格*/
+table.info {
+	background-color: #E7F2FD;
+	color: #43A102;
+	border-collapse: collapse;
+	border-width: 0px;
+	margin: 0 auto;/*居中*/
+}
+
+/* 提示性文字*/
+.tip_info {
+	color: #43A102;
+}
+
+/* 系统默认用户表单样式>>>*/
+table.usertable {
+	border: 1px solid #999999;
+	border-top:0px;
+	border-collapse: collapse;
+	border-spacing: 0;
+	table-layout: fixed;
+	font-size: 12px;
+	margin: 0 auto;/*居中*/
+}
+
+table.usertable td {
+	border: 1px solid #999999;
+	text-align: left;
+}
+
+/*表格中的突出显示标题  */
+table.usertable .title {
+	padding-left: 10px;
+	background-color: #EBEADB;
+	font-weight: bold;
+	letter-spacing: 7px;
+}
+
+/*设置列宽行的显示*/
+table.usertable .set_width td
+{
+	background-color:#00FF00;
+	padding:0px;
+	border:0px;
+}
+
+/*<<<系统默认用户表单样式*/
+
+/* 系统提示信息表格样式>>>*/
+table.systeminfotable {
+	border-width : 0px;
+	border-color: #FF6600;
+	border-style: solid;
+	border-collapse: collapse;
+	table-layout: fixed;
+	text-align: left;
+	background-color: #FFF2E9;
+	color: #065FB9;
+}
+table.systeminfotable td {
+	font-size: 12px;
+
+}
+/*<<<系统提示信息表格样式*/
+
+/*信息提示上标格式定义[start]*/
+sup.info{
+/*	border-top: thin solid #43a102;
+	border-bottom: thin solid #43a102;*/
+	vertical-align: super;
+	color: #FF8C05;
+}
+/*信息提示上标格式定义[end]*/
+
+/*查询表单样式 */
+table.searchtable {
+	border: 1px solid #8C8EA3;
+	border-collapse: separate;
+	table-layout: fixed;
+	font-weight: bold;
+	text-align: left;
+	background-color: #fff;
+	font-size: 12px;
+	margin: 0 auto;/*居中*/
+}
+
+/*设置列宽行的显示*/
+table.searchtable .set_width
+{
+	background-color:#00FF00;
+}
+
+table.searchtable .set_width td
+{
+	border:0px;
+	padding:0px;
+}
+
+table.searchtable .title{
+	background-color: #8C8EA3;
+}
+
+table.searchtable .tip{
+	color: #fff;
+	padding-left: 10px;
+}
+
+table.searchtable caption{
+	text-align: left;
+	padding:2px 2px;
+}
+
+table.portal_table {
+	table-layout:fixed;
+}
+
+table.portal_table {
+	table-layout:fixed;
+	border-collapse:collapse;
+}
+
+table.portal_table tr {
+	border-bottom:1px dotted #AAC;
+}
+
+table.portal_table th {
+	background:#E9E9F2;
+	text-align:center;
+	color:#366;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	
+	+border-bottom:1px dotted #AAC; /* IE6 IE7 */
+}
+
+table.portal_table td {
+	font-size:12px;
+	line-height:18px;
+	height:18px;
+	background:#FFF;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	
+	+border-bottom:1px dotted #AAC; /* IE6 IE7 */
+}
+
+table.portal_table td * {
+	display:block;
+	text-decoration:none;
+	color:#000;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+.portal_table tr.over td {
+	background-color:#E3E6F5;
+}

@@ -1,0 +1,123 @@
+@CHARSET "UTF-8";
+.slidermenu {
+    font-size:13px; 
+    font-family:Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif;
+}
+.slidermenu .trigger-link a{
+    display:block;
+    float:left;
+    width:100%;
+    height:100%;
+    text-decoration:none;
+    color:#333;
+}
+
+.slidermenu .menu a{
+    display:block;
+    float:left;
+    width:100%;
+    height:100%;
+    text-decoration:none;
+    color:#333;
+}
+
+.slidermenu .trigger{
+	background: url('images/nav_trigger_bg.png') repeat-x;
+	color:#333;
+	height:30px;
+	line-height:30px;
+	border-top:1px solid #BBB;
+	border-left:1px solid #BBB;
+	border-right:1px solid #BBB;
+	margin:0;
+	
+}
+
+.slidermenu .trigger-link span, .slidermenu .trigger-link-no-arrow span{
+    margin-left:6px;
+    float:left;
+}
+
+.slidermenu .menu {
+    margin:0;
+	padding:0;
+	border-left:1px solid #BBB;
+	border-right:1px solid #BBB;
+	border-top:1px solid #BBB;
+	background:#FFF;
+	
+}
+
+.slidermenu .menu ul{
+    margin:0;
+	padding:0;
+}
+
+.slidermenu .menu li{
+	margin:0;
+	padding:0;
+	color:#333;
+	height:30px;
+	line-height:30px;
+	display:block;
+	margin:0;
+	padding-left:10px;
+	*float:left;
+}
+
+.slidermenu .menu li.hover-li{
+ 	background:#EEE;
+ 	color:#030;
+}
+
+.slidermenu .menu li.current {
+    background:#99F;
+    font-weight:normal;
+}
+
+.slidermenu .menu li.current a {
+    color:#FFF;
+}
+
+.slidermenu .trigger-link{
+	background: url('images/nav_trigger_bg.png') repeat-x;
+	height:30px;
+	line-height:30px;
+	border-top:1px solid #BBB;
+	border-left:1px solid #BBB;
+	border-right:0px solid #BBB;
+}
+
+.slidermenu .hover-trigger-link {
+	height:30px;
+	line-height:30px;
+}
+ 
+.slidermenu .trigger-arrow{
+ 	background: url('images/nav_trigger_bg.png') repeat-x left top;
+	color:#000;
+	height:30px;
+	line-height:30px;
+	border-left:0px solid #BBB;
+	border-top:1px solid #BBB;
+	border-right:1px solid #BBB;
+}
+
+.slidermenu .hover-trigger-arrow {
+ 	background: url('images/nav_trigger_arrow_hover.png') no-repeat left top;
+	color:#000;
+}
+
+.slidermenu .trigger-arrow.active {
+ 	background: url('images/nav_trigger_arrow_active.png') no-repeat left top;
+	color:#000;
+}
+
+.slidermenu .trigger-link-no-arrow.active {
+ 	background: url('images/nav_trigger_bg.png') repeat-x;
+}
+
+.slidermenu .hover-trigger-link-no-arrow {
+ 	background: url('images/nav_trigger_bg_hover.png') repeat-x;
+ 	cursor:pointer;
+}

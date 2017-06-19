@@ -1,0 +1,32 @@
+/**
+ * 增加fg menu原需要调用方给出的style设置
+ * create time: 2010-7-28 10:32:24
+ * @version $Id: ui.custom.css 4 2012-07-18 06:40:23Z liqt $
+ * @author LiQintao
+ */
+
+/* 菜单隐藏设置*/
+.fg-menu-hidden {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.fg-button {
+	vertical-align:middle;
+	display : inline;
+    text-decoration: none !important;
+    border: 0px;// for ie
+    cursor: pointer;
+    position: relative;
+    zoom: 1;
+    margin-right:4px;
+}
+
+button.fg-button {
+    width: auto;
+    overflow: visible;
+}  /* removes extra button width in IE */

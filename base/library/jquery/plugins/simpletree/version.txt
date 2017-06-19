@@ -1,0 +1,13 @@
+NAME:
+
+    	Simple Tree +Drag'nDrop
+
+VERSION: 0.3
+
+http://news.kg/wp-content/uploads/tree/
+
+注意：
+
+需对原版本修正jquery.simple.tree.js文件第197行的图片路径：
+
+$('>span',node).before('<img class="trigger" src="include/jquery/plugins/simpletree/images/spacer.gif" border=0>');

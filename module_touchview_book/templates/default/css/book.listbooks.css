@@ -1,0 +1,94 @@
+/**
+ * 罗列多个书籍页面样式文件
+ *
+ * @version $Id: book.listbooks.css 127 2012-05-07 03:49:53Z liqt $
+ */
+
+#credits {
+	position: absolute;
+	width: 780px;
+	height: 510px;
+	left: 50%;
+	top: 50%;
+	margin: -255px 0 0 -320px;
+	text-align: center;
+	display: none;
+	z-index: 1000;
+	overflow-y: auto;
+	overflow-x:hidden;
+}
+
+body.credits #credits {
+	display: block;
+}
+
+#credits hr {
+	width: 780px;
+	border-color: #ffffff;
+	color: #eeeeee;
+}
+
+#credits div.header h2 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#credits div.header h2 span {
+	padding: 0 8px;
+	position: relative;
+	z-index: 1;
+}
+
+#credits div.header hr {
+	position: absolute;
+	top: 14px;
+}
+
+#credits ul {
+	margin-top: 25px;
+}
+
+#credits ul li {
+	display: block;
+	width: 188px;
+	height: 70px;
+	float: left;
+	margin: 0 2px 20px 2px;
+	text-align: center;
+	position: relative;
+}
+
+#credits ul li a {
+	padding: 0 2px;
+	display: block;
+	width: 184px;
+	min-height: 70px;
+}
+
+#credits ul li a:hover {
+}
+
+#credits ul li div.medium-book {
+	background-image: url('images/toc-section.png');
+	background-repeat: no-repeat;
+	width: 190px;
+	height: 66px;
+	text-align: center;
+
+}
+
+#credits ul li h3 {
+	font-size: 14px;
+	padding-top: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	transition: color .18s linear;
+	-o-transition: color .18s linear;
+	-moz-transition: color .18s linear;
+	-webkit-transition: color .18s linear;
+}
+
+#credits ul li:hover h3,#credits ul li.selected h3{
+	color: #b41e21;
+	font-weight: bold;
+}

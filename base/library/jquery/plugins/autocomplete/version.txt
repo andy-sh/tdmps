@@ -1,0 +1,50 @@
+NAME:
+Official website: http://bassistance.de/jquery-plugins/jquery-plugin-autocomplete/
+    	Autocomplete
+
+Current version: 1.0.2 修改版
+Compressed filesize: 7596 bytes
+License: MIT/GPL
+Tested in: Firefox 2, IE 6 & 7, Opera 9, Safari 3
+
+Dependencies
+Required
+
+    * jQuery 1.2.6
+
+Optional
+
+    * optional: bgiframe plugin to fix select-problems in IE, just include to apply to autocomplete
+    
+    
+ ===
+ [javascript][jquery]修改jQuery.Autocomplete插件以对中文输入法进行有效支持
+
+
+<p>
+<a href="http://bassistance.de/jquery-plugins/jquery-plugin-autocomplete/">jQuery.Autocomplete</a>是jquery的流行插件，能够很好的实现输入框的自动完成提示功能，支持ajax数据加载。
+</p>
+
+<p>
+但唯一遗憾的是，在对中文输入法打开时，firefox3.0中是对中文拼音的自动匹配，而对输入后的中文无法及时触发匹配；而在我的IE6.0下，则无此问题。
+</p>
+
+<p>
+原因分析：<br/>
+Autocomplete插件对用户输入字符的触发自动匹配是通过"keydown"事件进行的（可分析jquery.autocomplete.js第92行），在IE6中，当输入法打开时，输入的字符是不会触发"keydown"的，只有中文输入完毕才触发之，所以中文输入和latin文没有区别的；但在firefox3.0下，无论输入法打开否，按键都会触发"keydown"事件，所以造成中文输入完毕，自动匹配的是刚才打出的部分中文拼音字母。
+</p>
+
+<p>
+解决方法：<br/>
+网上查到的最多做法是修改jquery.autocomplete.js第92行，将"keydown"替换为"keyup"，但这个不是根本办法，虽然这样改后可在firefox中及时对输入的中文进行自动匹配，但将原插件中回车、tab等重要的事件机制破坏了，比如这样改后，如果你的input是在一个form里的话，回车从原来的将选定项输入到input中变为了直接提交form表单了，这并不是我们想要的。
+</p>
+
+<p>
+我的方法原理是，补充一个原插件触发查询的事件，就是当input输入栏发生字符变化时，重新进行查询（调用其内部的onChange函数），这里主要针对firefox而言，因为我们的系统访问最多的是IE和firefox。而恰好firefox有一个input变化的事件就是<strong>oninput</strong>，那么我们只要在原jquery.autocomplete.js第199行，插入如下代码：
+</p>
+[coolcode lang="javascript"]
+.bind("input", function() {
+	// @hack by liqt:support for inputing  chinese characters  in firefox
+	onChange(0, true);
+});
+[/coolcode]

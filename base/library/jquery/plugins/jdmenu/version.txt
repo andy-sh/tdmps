@@ -1,0 +1,5 @@
+NAME:
+
+    	jdmenu
+
+VERSION: 1.4.1 http://jdsharp.us/jQuery/plugins/jdMenu/

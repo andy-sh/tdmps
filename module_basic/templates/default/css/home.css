@@ -1,0 +1,337 @@
+/**
+ * description: 系统默认通用布局
+ * create time: 2006-8-2 15:08:23
+ * @version $Id: home.css 4 2012-07-18 06:40:23Z liqt $
+ * @author LiQintao(leeqintao@gmail.com)
+ */
+@import "basefont.css";
+@import "app.css";
+html {
+	height:100%;
+}
+
+body{
+	margin:0;
+	padding:0px;
+	font-size:12px;
+	text-align:center;
+	word-wrap: break-word; 
+	word-break: break-all;
+	height: 100%;
+	text-align:center;
+}
+
+li{
+	text-align:left;
+}
+
+a {
+	text-decoration:underline;
+	color:#0000CC;
+}
+
+a:hover a:visited{
+	color:#0000CC;
+	text-decoration:underline;
+}
+
+/*页面层容器*/
+div#container {
+	margin:auto;
+	min-width:990px;
+	min-height:100%;
+	background-color: #F6F6F6;
+	position:relative;
+}
+
+div#top{
+	width:100%;
+	margin: 0 auto;
+	height: auto;
+	background-color:#F6F6F6;
+}
+
+
+/*顶部菜单样式定义[start]*/
+div#top ul{
+	margin: 0 auto;
+	list-style-type: none;
+}
+
+div#top ul li
+{
+	float:left;
+	width:110px;
+	margin-left:5px;
+	margin-bottom: 3px;
+	line-height:30px;
+	font-size: 12px;
+}
+
+div#top ul li.noactive a
+{
+	background:#fdd283;
+	color:#444;
+	display:block;
+	text-align:center;
+	font-weight: bold;
+	height:30px;
+	text-decoration:none;
+}
+
+div#top ul li.noactive a:visited
+{
+	color:#444;
+	background:#fdd283;
+	text-decoration:none;
+}
+
+div#top ul li.noactive a:hover
+{
+	color:#FFF;
+	text-decoration:none;
+	background: #0066FF;
+}
+
+div#top ul li.active a
+{
+	color:#FFF;
+	background: #0066FF;
+	display:block;
+	text-align:center;
+	font-weight: bold;
+	height:30px;
+	text-decoration:none;
+}
+
+div#top ul li.active a:visited
+{
+	color:#FFF;
+	background: #0066FF;
+	text-decoration:none;
+}
+
+div#top ul li.active a:hover
+{
+	color:#FFF;
+	text-decoration:none;
+	background: #0066FF;
+}
+/*顶部菜单样式定义[end]*/
+
+/*顶部格式表 */
+table#top_banner{
+	width: 95%;
+	border-collapse: collapse;
+	table-layout: fixed;
+	margin: 10px 5px;
+}
+
+/*状态栏 */
+div#status{
+	font-size:12px;
+	margin: 0 auto 2px auto;
+	width: 100%;
+	height: 48px;
+	line-height:48px;
+	text-align: left;
+	background: url('../images/status_bg.png') repeat-x top left;
+	border-bottom: 1px solid #BBB;
+	min-width:990px;
+	padding-left:0px;
+	overflow:hidden;
+}
+
+div#status #home_link {
+	margin:0;
+	padding:0;
+	position:absolute;
+	bottom:0;
+	width:80px;
+	height:50px;
+	left:300px;
+	color:#000;
+	font-size:12px;
+	line-height:30px;
+	text-align:center;
+}
+
+div#status #home_link a {
+	display:block;
+	text-decoration:none;
+	color:#000;
+	background: url('../images/home-button.png') no-repeat top center;
+	margin-top:14px;
+}
+
+div#status #home_link a:hover {
+	margin-top:15px;
+	margin-left:1px;
+}
+
+div#status #home_link a span {
+	margin-top:32px;
+	color:#FFF;
+	height:16px;
+}
+
+span#logo {
+	background: url('../images/logo.png') no-repeat center center;
+	width:270px;
+	height:52px;
+	display:block;
+}
+
+/*页面主体*/
+#mainbox{
+	margin:0 auto;
+	padding: 5px 5px;
+}
+
+#mainbox:after {
+content:" ";
+display:block;
+clear:both;
+}
+
+div#leftcolumn{
+	width:150px;
+	text-align:center;
+	float:left; /*浮动居左*/
+	padding:5px;
+}
+
+div#rightcolumn{
+	position:relative;
+	margin-left: 160px;
+}
+
+/*菜单栏标题*/
+.side_menu_title{
+	background-color:#8C8EA3;
+	font-size:12px;
+	font-weight:bold;
+	color:#fff;
+	padding: 2px 0 2px 0;
+}
+
+.side_menu_content{
+	PADDING:0px;
+	BACKGROUND: #fff;
+	COLOR: #666;
+	border: 1px solid #8C8EA3;
+}
+
+/*左边菜单样式定义[start]*/
+.side_menu_content ul{
+	MARGIN: 0px;
+	PADDING: 0px;
+	BORDER: medium none; /*不显示边框*/
+	LINE-HEIGHT: normal; 
+	LIST-STYLE-TYPE: none;
+}
+
+.side_menu_content li{
+/*	LINE-HEIGHT: 18px;
+	height: 18px;
+	BORDER-TOP: #aaa 1px solid;*/
+	MARGIN: 0px;
+}
+
+.side_menu_content li.noactive a {
+	PADDING:5px 0px 5px 21px;
+	DISPLAY: block; 
+	BACKGROUND: url(images/icon_dot_lmenu.gif) transparent no-repeat 8px 50%; 
+	WIDTH: 100%; 
+	COLOR: #444; 
+	TEXT-DECORATION: none;
+}
+.side_menu_content li.noactive a:hover {
+	BACKGROUND: url(images/icon_dot_lmenu2.gif) #4499ee no-repeat 8px 50%;
+	COLOR: #fff;
+}
+
+.side_menu_content li.active a {
+	PADDING:5px 0px 5px 21px;
+	DISPLAY: block; 
+	BACKGROUND: url(images/icon_dot_lmenu2.gif) #4499ee no-repeat 8px 50%;
+	WIDTH: 100%; 
+	COLOR: #fff;
+	TEXT-DECORATION: none;
+}
+.side_menu_content li.active a:hover {
+	BACKGROUND: url(images/icon_dot_lmenu2.gif) #4499ee no-repeat 8px 50%;
+	COLOR: #fff;
+}
+/*左边菜单样式定义[end]*/
+
+div#app_title{
+	margin-top:5px;
+	background: url('../images/app_title_bg.png') repeat-x top left;
+	height: 24px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #000;
+	font-weight: bold;
+	text-align:left;
+	padding-left: 20px;
+	height:30px;
+	border:1px solid #BBB;
+	-moz-border-radius-topleft:5px;
+    -moz-border-radius-topright:5px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+
+div#app_content{
+	margin: 0 auto;
+	padding:15px 10px 10px 10px;
+	background-color: #FFF;
+	text-align: center;
+	border-left: 1px solid #BBB;
+	border-right: 1px solid #BBB;
+	border-bottom: 1px solid #BBB;
+	-moz-border-radius-bottomleft:5px;
+    -moz-border-radius-bottomright:5px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+}
+
+div.clear{clear:both;}
+
+div.spacer{padding-bottom:50px;}
+
+div#bottom{
+	position:relative;
+	width: 100%;
+	height:40px;
+	margin-top:-41px;
+	text-align: center;
+	background-color:#E8E8E8;
+	border-top:1px solid #BBB;
+}
+
+a.scap_button{
+	text-decoration:none;
+	color:#333;
+	padding:4px 6px;
+	line-height:32px;
+	border:1px solid #999;
+	background: url('../images/status_bg.png') repeat-x top left;
+	-moz-border-radius:3px;
+    border-radius:3px;
+}
+
+a.scap_button:hover{
+	text-decoration:none;
+	color:#003;
+	border:1px solid #666;
+	background: url('../images/status_bg.png') repeat-x center left;
+}
+
+a.scap_button:active{
+	text-decoration:none;
+	color:#003;
+	border:1px solid #666;
+	background: url('../images/status_bg.png') repeat-x bottom left;
+}

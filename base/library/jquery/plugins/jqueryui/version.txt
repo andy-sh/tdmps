@@ -1,0 +1,9 @@
+NAME:
+
+    	jqueryUI
+
+VERSION: 1.8.2
+
+http://www.jqueryui.com
+
+jquery-ui-timepicker-addon-0.5.min

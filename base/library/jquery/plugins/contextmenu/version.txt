@@ -1,0 +1,11 @@
+http://www.trendskitchens.co.nz/jquery/contextmenu/
+
+Version r2
+Released    16 July 2007
+Author  Chris Domigan (cdomigan at gmail dot com)
+Contributors    Dan G. Switzer, II
+Download    Source js file (4.3 KB)
+Compressed js file (2.5 KB)
+Requires    jQuery v1.1 or greater
+Supports     Firefox 1.5+
+Internet Explorer 6.0+

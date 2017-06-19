@@ -1,0 +1,124 @@
+NAME:
+
+		PRINTELEMENT
+		
+VERSION: 1.2
+
+http://projects.erikzaadi.com/jQueryPlugins/jQuery.printElement/
+
+
+/*******************************************************************/
+/*                           REFERENCE                             */
+/*******************************************************************/
+
+Usage:
+
+$('SelectorToPrint').printElement();
+
+
+
+Options:
+
+
+[printMode]
+
+Type: String
+Default: 'iframe'
+Description: Sets wether the plugins behavior is to open a popup of the element to print before printing, or to create a hidden iframe. Possible values: 'iframe' | 'popup'
+The only mode currently available in Chrome and Opera is popup mode
+Example
+
+$("selector").printElement({printMode:'popup'});
+
+
+
+[pageTitle]
+
+Type: String
+Default: ''
+Description: Print Page Title (name of the file sent to the printer)
+Example
+
+$("selector").printElement({pageTitle:'thisWillBeTheNameInThePrintersLog.html'});
+
+
+
+
+[overrideElementCSS]
+
+Type: Array of Strings | Array of $.fn.printElement.cssElement | Boolean
+Default: null
+Description: Can be one of the following 3 options: 
+1 : boolean (pass true for stripping all css linked) 
+2 : array of $.fn.printElement.cssElement (s) 
+3 : array of strings with paths to alternate css files (optimized for print)
+Example
+
+$("selector").printElement(
+            {
+            overrideElementCSS:[
+		'thisWillBeTheCSSUsed.css',
+		{ href:'thisWillBeTheCSSUsedAsWell.css',media:'print'}]
+            });
+            
+            
+            
+            
+[printBodyOptions]
+
+Type: Object
+Default: {styleToAdd: 'padding:10px;margin:10px;', classNameToAdd: ''}
+Description: Contains: 
+ styleToAdd : style attributes to add to the body of print document 
+ classNameToAdd : css class to add to the body of print document
+Example
+
+$("selector").printElement(
+            {
+            printBodyOptions:
+            {
+            styleToAdd:'padding:10px;margin:10px;color:#FFFFFF !important;',
+            classNameToAdd : 'thisWillBeTheClassUsedAsWell'
+            }
+            });
+            
+            
+            
+            
+[leaveOpen]
+
+Type: Boolean
+Default: false
+Description: in case of popup, determines if the print page will remain open or not
+In Opera, this will be left open by default
+Example
+
+$("selector").printElement(
+            {
+            leaveOpen:true,
+            printMode:'popup'
+            });
+            
+            
+            
+            
+            
+[iframeElementOptions]
+
+Type: Object
+Default: styleToAdd : border:none;position:absolute;width:0px;height:0px;bottom:0px;left:0px;}
+Description: Contains: 
+ styleToAdd : style attributes to add to the iframe element 
+ classNameToAdd : css class to add to the iframe element
+Example
+
+$("selector").printElement(
+            {
+            iframeElementOptions:
+            {
+            styleToAdd:'position:absolute;width:0px;height:0px;bottom:0px;',
+            classNameToAdd : 'thisWillBeTheClassUsedAsWell'
+            }
+            });
+            
+            

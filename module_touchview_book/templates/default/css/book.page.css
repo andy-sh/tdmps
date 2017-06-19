@@ -1,0 +1,67 @@
+/**
+ * book page(内页) style
+ *
+ * @version $Id: book.page.css 112 2012-04-11 09:04:33Z liqt $
+ */
+@import url("book.page_common.css");
+
+#pages {
+	width: 1600px;
+	height: 500px;
+	position: absolute;
+	left: 32px;
+	top: 10px;
+}
+
+/*书页内容样式*/
+#pages section {
+	width: 800px;
+	height: 500px;
+	position: absolute;
+	top: 0;
+	margin-left: 799px;
+	overflow: hidden;
+	background: url( 'images/right-page-paper.jpg' ) no-repeat;
+	background-color: #fff;
+}
+
+/*左页面*/
+#left-page {
+	position: absolute;
+	overflow: hidden;
+	background-color: #fff;
+	height: 520px;
+}
+
+/*首页左页面*/
+body.home #left-page {
+	width: 0;
+}
+
+#right-page {
+	position: absolute;
+	overflow: hidden;
+	left: 830px;
+	z-index: 10;
+	background-color: #fff;
+	height: 520px;
+}
+
+body.credits #right-page {
+	width: 0;
+}
+
+#pageNumber,#currentPage {
+	display: none;
+}
+
+/**
+ * Special treatment of "The End" page.
+ */
+#pages section.title-theend {
+	background: none;
+}
+
+#pages section.title-theend .pageNumber {
+	display: none;
+}

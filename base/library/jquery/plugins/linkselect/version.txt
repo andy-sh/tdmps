@@ -1,0 +1,7 @@
+NAME:
+
+    	Linkselect
+
+VERSION: 1.2.02
+
+http://www.givainc.com/labs/linkselect_jquery_plugin.htm

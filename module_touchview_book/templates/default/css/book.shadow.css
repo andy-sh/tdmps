@@ -1,0 +1,43 @@
+/**
+ * 书本周边阴影样式文件
+ *
+ * @version $Id: book.shadow.css 48 2012-02-21 02:34:46Z liqt $
+ */
+
+/*书本上下边缘阴影*/
+#shadow {
+	height: 555px;
+	width: 1620px;
+	position: absolute;
+	right: 20px;
+	top: -13px;
+	background: url(./images/repeat-x.png) repeat-x;
+}
+
+.home #shadow {
+	width: 790px;
+}
+
+.credits #shadow {
+	width: 790px;
+	right: auto;
+	left: 20px;
+}
+
+#shadow .shadow-left {
+	height: 555px;
+	width: 36px;
+	position: absolute;
+	left: -36px;
+	background-image: url('images/shadow-left.png');
+	background-repeat: no-repeat;
+}
+
+#shadow .shadow-right {
+	height: 555px;
+	width: 37px;
+	position: absolute;
+	right: -37px;
+	background-image: url('images/shadow-right.png');
+	background-repeat: no-repeat;
+}

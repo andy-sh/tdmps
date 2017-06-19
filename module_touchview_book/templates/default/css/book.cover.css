@@ -1,0 +1,48 @@
+/**
+ * book cover(封面，封底) style
+ *
+ * @version $Id: book.cover.css 48 2012-02-21 02:34:46Z liqt $
+ */
+
+/*封面*/
+#front-cover {
+	display: none;
+	position: absolute;
+	left: 830px;
+	top: 0;
+	height: 520px;
+	z-index: 1000;
+	background-color: #7893c1;
+}
+
+body.home #front-cover {
+	display: block;
+}
+
+/*封面内页阴影层*/
+#page-shadow-overlay {
+	display: none;
+	position: absolute;
+	z-index: 999;
+	left: 831px;
+	top: 10px;
+	width: 800px;
+	height: 500px;
+	opacity: 0;
+	background-color: #000000;
+}
+
+/*封底*/
+#back-cover {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 520px;
+	z-index: 1001;
+	background-color: #7893c1;
+}
+
+body.credits #back-cover {
+	display: block;
+}

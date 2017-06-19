@@ -1,0 +1,75 @@
+/**
+ * book front主样式定义
+ * book.main style
+ * @version $Id: book.main.css 127 2012-05-07 03:49:53Z liqt $
+ */
+
+@import url("book.reset.css");
+@import url("book.preloader.css");
+@import url("book.paperstack.css");
+@import url("book.header.css");
+@import url("book.cover.css");
+@import url("book.page.css");
+/*@import url("book.chapternav.css");*/
+@import url("book.toc.css");
+@import url("book.listbooks.css");
+@import url("book.footer.css");
+@import url("book.shadow.css");
+
+html,body {
+	background-image: url('images/desk-bg-mu.png');
+	transition: background-color .4s linear;
+	-o-transition: background-color .4s linear;
+	-moz-transition: background-color .4s linear;
+	-webkit-transition: background-color .4s linear;
+	min-height: 650px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333333;
+	height: 100%;
+	
+}
+
+/*区域内不可选择*/
+* {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+a,a:hover,a:active {
+	outline: none;
+	color: #333333;
+	text-decoration: none;
+}
+
+/**
+ * 书籍样式
+ * Book styles
+ */
+#book {
+	width: 1660px;
+	height: 520px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -270px 0 0 -1220px;
+}
+
+#chapter-nav,header,footer {
+	opacity: 1;
+	transition: opacity .4s linear;
+	-o-transition: opacity .4s linear;
+	-moz-transition: opacity .4s linear;
+	-webkit-transition: opacity .4s linear;
+}
+
+#front-cover,#back-cover,#pages section {
+	transition: transform .2s ease-out;
+	-o-transition: -o-transform .2s ease-out;
+	-moz-transition: -moz-transform .2s ease-out;
+	-webkit-transition: -webkit-transform .2s ease-out;
+}

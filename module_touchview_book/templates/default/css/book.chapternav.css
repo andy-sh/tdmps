@@ -1,0 +1,168 @@
+/**
+ * book chapter nav(底部章节导航栏样式) style
+ *
+ * @version $Id: book.chapternav.css 126 2012-05-06 16:39:50Z liqt $
+ */
+
+/**
+ * 底部章节导航栏样式
+ * The chapter navigation below the book
+ */
+#chapter-nav ul li,#chapter-nav ul li a.over,#chapter-nav ul li:hover a.over{
+	transition: opacity .21s linear;
+	-o-transition: opacity .21s linear;
+	-moz-transition: opacity .21s linear;
+	-webkit-transition: opacity .21s linear;
+}
+
+#chapter-nav {
+	display: block;
+	position: absolute;
+	width: 830px;
+	padding: 20px 0;
+	z-index: 1998;
+}
+
+#chapter-nav>p {
+	font-size: 10px;
+	font-weight: bold;
+	color: #999999;
+	position: absolute;
+	left: -108px;
+	margin-top: 5px;
+	width: 100px;
+	text-align: center;
+	text-shadow: 0 1px 1px #ffffff;
+	-o-text-shadow: 0 1px 1px #ffffff;
+	-moz-text-shadow: 0 1px 1px #ffffff;
+	-webkit-text-shadow: 0 1px 1px #ffffff;
+}
+
+#chapter-nav ul li {
+	background-image: url('images/chapter-nav-icon.png');
+	background-repeat: no-repeat;
+	display: block;
+	width: 35px;
+	height: 20px;
+	list-style: none;
+	float: left;
+	margin: 3px 3px;
+	opacity: 0.5;
+	position: relative;
+	z-index: 1;
+}
+
+#chapter-nav ul li:hover {
+	z-index: 10;
+	opacity: 1;
+}
+
+#chapter-nav ul li.selected,#chapter-nav:hover ul li {
+	opacity: 1;
+}
+
+#chapter-nav ul li .cnItem span {
+	float: right;
+}
+
+#chapter-nav ul li.selected .cnItem {
+	border: 2px solid #e2494f;
+	margin: -2px 0 -2px 0;
+	border-radius: 2px;
+	width: 32px;
+}
+
+#chapter-nav ul li .cnItem {
+	display: block;
+	font-size: 9px;
+	text-decoration: none;
+	color: #8a8a8a;
+	text-align: center;
+	width: 34px;
+	height: 20px;
+}
+
+#chapter-nav ul li .cnItem span {
+	position: relative;
+	top: 6px;
+	right: 5px;
+}
+
+#chapter-nav ul li .over {
+	position: relative;
+	margin-left: 3px;
+	width: 87px;
+	cursor: pointer;
+	overflow: visible;
+	left: -28px;
+	display: none;
+}
+
+#chapter-nav ul li:hover .over {
+	display: block;
+	border-radius: 2px;
+}
+
+#chapter-nav ul li.disabled .over {
+	display: none !important;
+}
+
+#chapter-nav ul li .over div.description {
+	background-color: #eeeeee;
+	padding: 3px;
+	text-align: center;
+	width: 170px;
+	margin-left: -43px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	margin-bottom: 2px;
+}
+
+#chapter-nav ul li .over p.title {
+	width: 170px;
+	display: block;
+	color: #333333;
+	font-weight: bold;
+	font-size: 11px;
+	margin-bottom: 2px;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 4px #eeeeee;
+	-o-text-shadow: 0px 0px 4px #eeeeee;
+	-moz-text-shadow: 0px 0px 4px #eeeeee;
+	-webkit-text-shadow: 0px 0px 4px #eeeeee;
+}
+
+#chapter-nav ul li .over p.title span {
+	padding: 3px;
+	border-radius: 2px;
+}
+
+#chapter-nav ul li .over p.pagenumber {
+	font-size: 10px;
+	color: #858585;
+	text-align: center;
+	margin-bottom: 4px;
+}
+
+#chapter-nav ul li .over div.small-book {
+	background-image: url('images/small-book.png');
+	background-repeat: no-repeat;
+	display: block;
+	width: 87px;
+	height: 30px;
+}
+
+#chapter-nav ul li.selected .over div.small-book {
+	outline: 2px solid #e2494f;
+}
+
+#chapter-nav ul li .over div.small-book p {
+	width: 40px;
+	font-size: 11px;
+	color: #333333;
+	text-align: center;
+	position: relative;
+	top: 9px;
+	float: right;
+}

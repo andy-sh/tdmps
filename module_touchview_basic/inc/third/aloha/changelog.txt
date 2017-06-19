@@ -1,0 +1,59 @@
+/**
+ * aloha变更日志文件
+ * create time: 2011-12-05 下午01:31:12
+ * @version $Id: changelog.txt 156 2014-02-10 06:14:12Z liqt $
+ * @author LiQintao
+ */
+
+[符号说明]
+-去除（比如bug） +增加（一些功能或其它） *修改（现有内容等，bug除外）
+
+[顺序说明]
+最新的改动放在最前列。
+
+[2014-02-08]liqt
+aloha资源：
+http://stackoverflow.com/questions/18096863/how-to-add-a-plugin-in-aloha-editor
+http://blog.strouseconsulting.com/2012/06/aloha-plugins/
+
+[2012-04-28]liqt
+* 删除aloha不必要的发布文件。
+* 更新aloha.js文件，版本为0.20.10
+编译方法：~/git/Aloha-Editor$ ./bin/build.sh build/aloha
+
+
+[2012-05-12]gaox
+* format组件文字颜色16种，+按钮
+
+[2012-04-17]gaox
+* format组件文字颜色和大小不能同时设置的问题 
+
+[2012-03-13]gaox
+* format组件增加文字颜色和字体大小
+
+[2012-03-12]gaox
+* format组件增加无缩进段落按钮
+
+[2012-03-08]gaox
+* image组件增加删除图片按钮
+
+[2012-03-06]gaox
+* 修正image组件align按钮无效的问题
+
+[2012-03-06]gaox
+* 修正image点击后出现位置偏移的问题
+
+[2012-03-05]gaox
+* 修正image组件resize handles配置无效的错误
+
+[2012-03-04]gaox
+* 修正image组件图片src获取不到的错误
+* 修正image组件，宽高控件不显示数值的错误（将他们放入第一个tab）
+
+[2012-03-03]gaox
+* 修正image组件四个button渲染时报告name为空的错误
+
+[2012-02-29]liqt
+- 基于aloha 0.20.5
+- 精简原aloha组件不必要文件
+- 为aloha增加 zh 中文，去除不需要的语言

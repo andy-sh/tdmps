@@ -1,0 +1,76 @@
+/**
+ * book paperstack(纸张堆叠效果) style
+ *
+ * @version $Id: book.paperstack.css 48 2012-02-21 02:34:46Z liqt $
+ */
+/*纸张堆叠效果*/
+#paperstack {
+	position: absolute;
+	width: 34px;
+	height: 500px;
+	top: 10px;
+	left: 800px;
+}
+
+#paperstack .paper {
+	width: 1px;
+	float: left;
+	z-index: 2;
+}
+
+#paperstack .paper.s1 {
+	height: 500px;
+	margin-top: 0px;
+	background-color: #b6d6d6;
+}
+
+#paperstack .paper.s2 {
+	height: 498px;
+	margin-top: 1px;
+	background-color: #c8c9c9;
+}
+
+#paperstack .paper.s3 {
+	height: 496px;
+	margin-top: 2px;
+	background-color: #d6d6d6;
+}
+
+#paperstack .paper.s4 {
+	height: 494px;
+	margin-top: 3px;
+	background-color: #c8c9c9;
+}
+
+#paperstack .paper.s5 {
+	height: 492px;
+	margin-top: 4px;
+	background-color: #d6d6d6;
+}
+
+#paperstack .paper.s6 {
+	height: 490px;
+	margin-top: 5px;
+	background-color: #c8c9c9;
+}
+
+#paperstack .paper.s7 {
+	height: 488px;
+	margin-top: 6px;
+	background-color: #d6d6d6;
+}
+
+#paperstack .shadow {
+	background-image: url('images/paperstack-shadow.png');
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 500px;
+	margin-left: 0;
+}
+
+#paperstack .paper,#paperstack .shadow {
+	transition: opacity .15s linear;
+	-o-transition: opacity .15s linear;
+	-moz-transition: opacity .15s linear;
+	-webkit-transition: opacity .15s linear;
+}

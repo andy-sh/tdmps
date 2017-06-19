@@ -1,0 +1,131 @@
+/**
+ * book page(内页) style
+ * 为后台编辑页面使用
+ *
+ * @version $Id: book.page_edit.css 125 2012-05-02 09:34:31Z liqt $
+ */
+@import url("book.page_common.css");
+
+section.edit {
+	width: 800px;
+	height: 500px;
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	background: url( 'images/right-page-paper.jpg' ) no-repeat;
+	background-color: #fff;
+}
+
+div#toolbox {
+	width: 100px;
+	height: 500px;
+	position: absolute;
+	top: 0;
+	left: 800px;
+	padding-left: 5px;
+	font-size: 12px;
+}
+
+div#toolbox a{
+	text-decoration:none;
+	color:#333;
+	padding:4px 4px;
+	line-height:32px;
+	border:1px solid #999;
+	background: url('images/status_bg.png') repeat-x top left;
+	-moz-border-radius:3px;
+    border-radius:3px;
+}
+
+div#toolbox a:hover{
+	text-decoration:none;
+	color:#003;
+	border:1px solid #666;
+	background: url('images/status_bg.png') repeat-x center left;
+}
+
+div#toolbox a:active{
+	text-decoration:none;
+	color:#003;
+	border:1px solid #666;
+	background: url('images/status_bg.png') repeat-x bottom left;
+}
+
+/*页面布局显示区域*/
+span#one-column, span#two-column{
+	width: 48px;
+	height: 36px;
+	display: inline-block;
+	
+}
+
+span#one-column.noactive {
+	background: url("images/icon-one-column.png") no-repeat center;
+}
+
+span#two-column.noactive {
+	background: url("images/icon-two-column.png") no-repeat center;
+}
+
+span#one-column.active {
+	background: url("images/icon-one-column-active.png") no-repeat center;
+}
+
+span#two-column.active {
+	background: url("images/icon-two-column-active.png") no-repeat center;
+}
+
+div#imagelist {
+	width: 800px;
+	position: absolute;
+	top: 500px;
+}
+
+div#imageupload {
+	width: 100px;
+	position: absolute;
+	top: 500px;
+	left: 800px;
+	font-size: 12px;
+}
+
+div#dustbin {
+	background: url("images/dustbin.png") no-repeat center;
+	height: 75px;
+}
+
+/*图库选择区域*/
+#imagelist {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+a.upload-image{
+	text-decoration:none;
+	color:#333;
+	padding:4px 6px;
+	line-height:32px;
+	border:1px solid #999;
+	background: url('images/status_bg.png') repeat-x top left;
+	-moz-border-radius:3px;
+    border-radius:3px;
+}
+
+a.upload-image:hover{
+	text-decoration:none;
+	color:#003;
+	border:1px solid #666;
+	background: url('images/status_bg.png') repeat-x center left;
+}
+
+a.upload-image:active{
+	text-decoration:none;
+	color:#003;
+	border:1px solid #666;
+	background: url('images/status_bg.png') repeat-x bottom left;
+}

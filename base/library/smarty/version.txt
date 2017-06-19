@@ -1,0 +1,5 @@
+NAME:
+
+    Smarty - the PHP compiling template engine
+
+VERSION: 2.6.9

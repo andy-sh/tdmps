@@ -1,0 +1,28 @@
+/*!
+* Aloha Editor
+* Author & Copyright (c) 2010 Gentics Software GmbH
+* aloha-sales@gentics.com
+* Licensed unter the terms of http://www.aloha-editor.com/license.html
+*/
+button.aloha-button-strong{ background: url(../img/strong.png) no-repeat 0px 0px !important; }
+button.aloha-button-em{ background: url(../img/em.png) no-repeat 0px 0px !important; }
+
+button.aloha-button-black{ background: black !important;}
+button.aloha-button-gray{ background: gray !important;}
+button.aloha-button-silver{ background: silver !important;}
+button.aloha-button-white{ background: white !important;}
+
+button.aloha-button-maroon{ background: maroon !important;}
+button.aloha-button-red{ background: red !important;}
+button.aloha-button-purple{ background: purple !important;}
+button.aloha-button-fuchsia{ background: fuchsia !important;}
+
+button.aloha-button-green{ background: green !important;}
+button.aloha-button-lime{ background: lime !important;}
+button.aloha-button-olive{ background: olive !important;}
+button.aloha-button-yellow{ background: yellow !important;}
+
+button.aloha-button-navy{ background: navy !important;}
+button.aloha-button-blue{ background: blue !important;}
+button.aloha-button-teal{ background: teal !important;}
+button.aloha-button-aqua{ background: aqua !important;}

@@ -1,0 +1,25 @@
+NAME:
+
+        jquery menu
+
+VERSION: 3.0, 03.31.2009
+
+
+http://www.filamentgroup.com/lab/jquery_ipod_style_and_flyout_menus/
+==使用指南==
+如果需要获取选中菜单的文本而不是执行链接，则修改fg.menu.js的244行的函数：
+this.chooseItem = function(item){
+        menu.kill();
+        // edit this for your own custom function/callback:
+        //$('#menuSelection').text($(item).text()); //获取菜单文本
+        location.href = $(item).attr('href');//执行链接
+    };
+
+==与jquery-ui.autocomplete兼容问题
+The fg.menu and autocomplete both add .menu() to jQuery. 
+I renamed the fg.menu to $.fn.fgmenu and they cooperate now.
+can you share your code please? or at least give more info on the changes to do... :) thanks! – Lorenzo Sep 29 at 20:25
+Anyway, that menu does not permit me to attach jquery events at runtime to the <a> element (the menuitem). really nice but really bad! – Lorenzo Sep 29 at 21:53
+It's a quick change in the fg.menu.js. Change the line that reads " $.fn.menu = function(options) { " 
+to " $.fn.fgmenu = function(options) { ". 
+And then to use the menu you call $().fgmenu(). – Corey Downie Sep 30 at 13:19

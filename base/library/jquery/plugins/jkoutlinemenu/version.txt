@@ -1,0 +1,7 @@
+jkoutlinemenu
+
+http://www.javascriptkit.com/script/script2/outlinemenu.shtml
+
+Description: A drop down menu with a sleek "outline" animation added when it drops down, applicable to any anchor link. The menu can be set to appear either via a "click" or "mouseover" of the anchor link.
+
+Structure wise, each animated outline menu is simply defined as regular list menus on the page, and supports an optional height setting that causes that menu to be scrollable (useful for very tall menus with lots of links). Nifty! This script is powered by the versatile jQuery library.

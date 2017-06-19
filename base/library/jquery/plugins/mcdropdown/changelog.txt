@@ -1,0 +1,20 @@
+/**
+ * mcdropdown插件变更日志
+ * create time: 2008-11-19 上午10:32:55
+ * @version $Id: changelog.txt 4 2012-07-18 06:40:23Z liqt $
+ * @author Hufh feihaohu@163.com
+ */
+
+ [符号说明]
+-去除（比如bug） +增加（一些功能或其它） *修改（现有内容等，bug除外）
+
+[顺序说明]
+最新的改动放在最前列。
+
+[2011-06-23]liqt
+* hack原系统，加入参数：inputHiddenName: ""		   // 为生成的input hidden指定名称
+目的是为了更好供框架使用，否则其生成的input hidden组件名称不能为 content[xxx]样式
+
+[2011-06-22]liqt
++ 引入mcdropdown插件1.3.0
+

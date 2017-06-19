@@ -1,0 +1,23 @@
+http://www.prodiven.com/jcombo/
+
+jCombo - jQuery Cascading Select (Nested Combos).
+
+This plugin simplifies the process to populate data into SELECT tags, even if nested or not. The only condition is to put the fields in query consecutively in order to create pairs of [value],[text] inside the Json File. Unobtrusive, without fancy effects, just takes data as fast as possible.
+
+html:
+    <select name="list1" id="list1"></select> 
+    <select name="list2" id="list2"></select>
+    <select name="list3" id="list3"></select>
+
+javascript:
+    $("#list1").jCombo("getEstados.php", { selected_value : '15' } );
+    $("#list2").jCombo("getMunicipios.php?id=", { 
+                    parent: "#list1", 
+                    parent_value: '15', 
+                    selected_value: '178' 
+                });     
+    $("#list3").jCombo("getParroquias.php?id=", { 
+                    parent: "#list2", 
+                    parent_value: '178', 
+                    selected_value: '630' 
+                });

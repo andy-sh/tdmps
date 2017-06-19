@@ -1,0 +1,1 @@
+define({"button.addcharacter.tooltip": "插入特殊字符"});

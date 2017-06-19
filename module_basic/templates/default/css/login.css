@@ -1,0 +1,117 @@
+/**
+ * description: login界面的css文件
+ * create time: 2007-1-11 16:40:43
+ * @version $Id: login.css 4 2012-07-18 06:40:23Z liqt $
+ * @author LiQintao(leeqintao@gmail.com)
+ */
+body{
+	height: 100%;
+	background-color: #fff;
+	font-family:Verdana;
+}
+
+div#login_top h1{
+	position:relative;
+	letter-spacing: 0.7em;
+	height: auto;
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 65px;
+	color: #000;
+}
+
+div#login_top{
+	width: 98%;
+	padding:0;
+	margin: 60px auto auto auto;
+	text-align:left;
+	height:40px;
+	line-height:40px;
+	background:url(images/ball1.gif) no-repeat;
+	background-position : 30px 50%;
+	background-color:#E5ECF9;
+	border-top: 1px #3366CC solid;
+}
+
+div#login_main{
+	width: 98%;
+	height: auto;
+	margin: 70px auto auto auto;
+	padding:10px 0px 10px 0px;
+	background-color:#fff;
+}
+
+#login_tip{
+	height: 30px;
+	line-height:30px; 
+	text-align:left;
+	font-size:15px;
+	font-weight: bold;
+	padding-left:35px;
+	color: #FA6B06;
+	background:url(images/person-1.gif) no-repeat;
+}
+
+div#login_input{
+	width: 400px;
+	margin: 0px auto auto auto;
+/*	background-color:#E6E6E6;*/
+	font-size: 14px;
+	position:relative;
+}
+
+table#login_input{
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	table-layout: fixed;
+}
+
+table#login_input td{
+	line-height:100%;
+}
+
+table#login_input .login_top_left{
+	width: 20px;
+	background:url(images/login-top-left.gif) no-repeat;
+}
+
+table#login_input .login_top_right{
+	width: 20px;
+	height: 20px;
+	background:url(images/login-top-right.gif) no-repeat;
+}
+
+table#login_input .login_bottom_left{
+	width: 20px;
+	background:url(images/login-bottom-left.gif) no-repeat;
+}
+
+table#login_input .login_bottom_right{
+	width: 20px;
+	height: 20px;
+	background:url(images/login-bottom-right.gif) no-repeat;
+}
+
+table#login_input .login_top{
+	background:url(images/login-top.gif) repeat-x;
+}
+
+table#login_input .login_bottom{
+	background:url(images/login-bottom.gif) repeat-x;
+}
+
+table#login_input .login_left{
+	background:url(images/login-left.gif) repeat-y;
+}
+
+table#login_input .login_right{
+	background:url(images/login-right.gif) repeat-y;
+}
+
+table#login_input input.text{
+	border-top:0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 1px solid #ccc;
+}

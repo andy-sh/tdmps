@@ -1,0 +1,74 @@
+#login_main {height:100%; vertical-align: middle; display:table;}
+#login_logo {height:100%; vertical-align: middle; display:table-cell;}
+#login_input {height:100%; vertical-align: middle; display:table-cell;}
+#logo_image {float:left;}
+#logo_title {float:left;background: url(../images/logo_title.png) center right no-repeat;width:330px; height:120px;}
+#logo_text {font-size:24px; line-height:28px;}
+
+.alert-message {
+background: none repeat scroll 0 0 #4E4E4E;
+    border: 0 none;
+    box-shadow: none;
+    font-size: 116%;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding: 12px 15px;
+    position: static;
+    top: -30px;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 4px 4px 4px 4px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 18px;
+    width:270px;
+}
+
+.alert-message ul {list-style:none; color:#FFFFFF; padding:0; margin:0;}
+.alert-message ul li {color:#FFFFFF;}
+
+#login_tip {font-size: 116%;
+    font-weight: bold;
+    margin-bottom: 8px;}
+    
+.input_label {clear: both;
+    color: #9E9E9E;
+    display: block;
+    float: none;
+    font-size: 85%;
+    margin: 0 0 7px;
+    width: auto;
+    font-weight:normal;}
+    
+#input_username, #input_password {
+    font-size: 15px;
+    padding: 7px 8px;
+    -moz-appearance: none;
+    -moz-box-sizing: border-box;
+    border: 1px solid #DEDEDE;
+    border-radius: 3px 3px 3px 3px;
+    color: #666666;
+    margin: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    resize:none;
+}
+
+#input_submit {
+	cursor:pointer;
+	font-family: '微软雅黑';
+	font-size: 15px;
+    padding: 7px 12px;
+    -moz-appearance: none;
+    -moz-box-sizing: border-box;
+    border: 1px solid #DEDEDE;
+    border-radius: 3px 3px 3px 3px;
+    color: #666666;
+    margin: 6px 0 0 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    resize:none;
+    background:#F5F5F5;
+    color:#666;
+}
+
+#input_submit:hover {background:#F0EEEE; color:#124;}

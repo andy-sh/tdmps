@@ -1,0 +1,43 @@
+/**
+ * book footer style
+ *
+ * @version $Id: book.footer.css 130 2012-05-08 07:52:12Z liqt $
+ */
+
+/**
+ * 页脚相关样式
+ * Footer styles
+ */
+footer {
+	display: block;
+	width: 100%;
+	height: auto;
+	min-width: 950px;
+	position: absolute;
+	top: 100%;
+	margin-top: -25px;
+	font-size: 12px;
+	z-index: 2000;
+}
+
+footer #product-info {
+	display: block;
+	margin-bottom: 9px;
+	padding-left: 15px;
+	width: auto;
+	float: left;
+	letter-spacing: 2px;
+	color: #555;
+	text-shadow: 0px 1px 1px #666;
+}
+
+footer #company-info {
+	display: block;
+	margin-bottom: 9px;
+	padding-right: 15px;
+	width: auto;
+	float: right;
+	letter-spacing: 2px;
+	color: #555;
+	text-shadow: 0px 1px 1px #666;
+}

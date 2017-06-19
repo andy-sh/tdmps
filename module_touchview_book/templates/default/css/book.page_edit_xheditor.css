@@ -1,0 +1,50 @@
+/**
+ * book page 为xheditor编辑器同步的style
+ *
+ * @version $Id: book.page_edit_xheditor.css 160 2014-02-14 03:50:25Z liqt $
+ */
+
+/*页面正文样式*/
+body.editMode {
+	font-family: '微软雅黑',arial, sans-serif;
+	width: 715px;
+	height: 440px;
+	position: absolute;
+	font-size: 16px;
+    line-height: 1.5;
+    padding: 0;
+}
+
+p{
+	text-indent: 2em; /*em是相对单位，2em即现在一个字大小的两倍*/
+}
+
+p.no-indent {
+	text-indent: 0em;
+}
+
+img{
+	max-width: 710px;
+	max-height: 430px;
+}
+
+/*上标下标*/
+sub {vertical-align:text-bottom; font-size:70%;}
+sup {vertical-align:text-top; font-size:70%;}
+
+/*标题*/
+h1,h2,h3,h4,h5,h6 {text-indent:0;}
+h1 {font-size:40px;}
+h2 {font-size:34px;}
+h3 {font-size:30px;}
+h4 {font-size:24px;}
+h5 {font-size:20px;}
+h6 {font-size:16px; font-family:楷体;}
+
+/*斜体粗体*/
+i {font-style:italic;}
+b {font-weight:bold;}
+
+/*列表样式*/
+ul {list-style:disc inside none;}
+ol {list-style:decimal inside none;}

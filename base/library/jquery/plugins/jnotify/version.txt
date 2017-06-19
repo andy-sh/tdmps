@@ -1,0 +1,7 @@
+NAME:
+
+    	jNotify jQuery Plug-in
+
+VERSION: 1.1.00
+
+http://www.givainc.com/labs/jnotify_jquery_plugin.htm

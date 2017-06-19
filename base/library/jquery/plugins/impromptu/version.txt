@@ -1,0 +1,7 @@
+NAME:
+
+    	jQuery Impromptu
+
+VERSION: 2.2
+
+Ö÷Ò³£ºhttp://www.trentrichardson.com/Impromptu/index.php

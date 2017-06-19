@@ -1,0 +1,113 @@
+/**
+ * book page 通用 style
+ *
+ * @version $Id: book.page_common.css 136 2012-05-12 07:23:37Z gaox $
+ */
+
+span.pageNumber {
+	font-family: Times, serif;
+	font-size: 11px;
+	float: right;
+	position: absolute;
+	bottom: 22px;
+	right: 20px;
+	color: #999999;
+}
+
+/*页面正文样式*/
+.page {
+	font-family: '微软雅黑',arial, sans-serif;
+	width: 715px;
+	height: 440px;
+	position: absolute;
+	padding: 35px 45px 35px 45px;
+}
+
+.page-content {
+	height: 100%;
+	width: 100%;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.page-content p{
+	text-indent: 2em; /*em是相对单位，2em即现在一个字大小的两倍*/
+}
+
+.page-content p.no-indent {
+	text-indent: 0em;
+}
+
+.page-content span.font-color-black {color:black;}
+.page-content span.font-color-gray {color:gray;}
+.page-content span.font-color-silver {color:silver;}
+.page-content span.font-color-white {color:white;}
+
+.page-content span.font-color-maroon {color:maroon;}
+.page-content span.font-color-red {color:red;}
+.page-content span.font-color-purple {color:purple;}
+.page-content span.font-color-fuchsia {color:fuchsia;}
+
+.page-content span.font-color-green {color:green;}
+.page-content span.font-color-lime {color:lime;}
+.page-content span.font-color-olive {color:olive;}
+.page-content span.font-color-yellow {color:yellow;}
+
+.page-content span.font-color-navy {color:navy;}
+.page-content span.font-color-blue {color:blue;}
+.page-content span.font-color-teal {color:teal;}
+.page-content span.font-color-aqua {color:aqua;}
+
+.page-content img{
+	max-width: 710px;
+	max-height: 430px;
+}
+
+/*上标下标*/
+.page-content sub {vertical-align:text-bottom; font-size:70%;}
+.page-content sup {vertical-align:text-top; font-size:70%;}
+
+/*标题*/
+.page-content h1,.page-content h2,.page-content h3,.page-content h4,.page-content h5,.page-content h6 {text-indent:0;}
+.page-content h1 {font-size:40px;}
+.page-content h2 {font-size:34px;}
+.page-content h3 {font-size:30px;}
+.page-content h4 {font-size:24px;}
+.page-content h5 {font-size:20px;}
+.page-content h6 {font-size:16px; font-family:楷体;}
+
+/*斜体粗体*/
+.page-content i {font-style:italic;}
+.page-content b {font-weight:bold;}
+
+/*列表样式*/
+.page-content ul {list-style:disc inside none;}
+.page-content ol {list-style:decimal inside none;}
+
+/*位于page右边，竖排*/
+.page-title {
+	position: absolute;
+	margin-left: 735px;
+	padding-top: 110px;
+	font-size: 12px;
+	width: 12px;
+	overflow: hidden;
+	word-wrap:break-word;
+	word-break:break-all;
+}
+
+/*页面布局模板*/
+.tpl-page-default {
+	
+}
+
+/*两列布局*/
+.tpl-page-two-column {
+	-moz-column-gap:15px; /* Firefox */
+	-webkit-column-gap:15px; /* Safari and Chrome */
+	column-gap:15px;
+	
+	-moz-column-width:350px; /* Firefox */
+	-webkit-column-width:350px; /* Safari and Chrome */
+	column-width:350px;
+}

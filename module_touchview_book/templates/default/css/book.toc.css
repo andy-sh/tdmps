@@ -1,0 +1,130 @@
+/**
+ * book toc(章节目录相关样式) style
+ *
+ * @version $Id: book.toc.css 126 2012-05-06 16:39:50Z liqt $
+ */
+
+/**
+ * 章节目录相关样式
+ * Table of Contents
+ */
+#table-of-contents {
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-image: url('images/desk-bg-mu.png');
+	z-index: 1999;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+
+body.tot #table-of-contents {
+	opacity: 1;
+	display: block;
+}
+
+#table-of-contents div.center {
+	position: relative;
+	width: 966px;
+	height: 550px;
+	left: 50%;
+	top: 50%;
+	margin: -295px 0 0 -483px;
+}
+
+/*书目回退按钮样式*/
+#table-of-contents a.go-back {
+	display: block;
+	font-size: 16px;
+	float: left;
+	left: 4px;
+	top: 3px;
+	position: absolute;
+	z-index: 1;
+}
+
+#table-of-contents hr {
+	width: 948px;
+	border-color: #ffffff;
+	color: #eeeeee;
+	position: absolute;
+	top: 18px;
+	left: 6px;
+}
+
+#table-of-contents h2 {
+	font-size: 16px;
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+}
+
+#table-of-contents h2 span {
+	padding-top: 5px;
+	position: relative;
+	z-index: 1;
+	text-transform: uppercase;
+}
+
+#table-of-contents ul {
+	margin-top: 25px;
+}
+
+#table-of-contents ul li {
+	display: block;
+	width: 188px;
+	height: 90px;
+	float: left;
+	margin: 0 2px 45px 2px;
+	text-align: center;
+	position: relative;
+}
+
+#table-of-contents ul li a {
+	padding: 0 2px;
+	display: block;
+	width: 184px;
+	min-height: 90px;
+}
+
+#table-of-contents ul li a:hover {
+}
+
+#table-of-contents ul li div.medium-book {
+	background-image: url('images/toc-section.png');
+	background-repeat: no-repeat;
+	width: 190px;
+	height: 66px;
+}
+
+#table-of-contents ul li div.medium-book p {
+	text-align: left;
+	position: relative;
+	top: 26px;
+	left: 63px;
+}
+
+#table-of-contents ul li h3 {
+	font-size: 14px;
+	width: 90%;
+	margin: 5px 0 4px 5%;
+	transition: color .18s linear;
+	-o-transition: color .18s linear;
+	-moz-transition: color .18s linear;
+	-webkit-transition: color .18s linear;
+}
+
+#table-of-contents ul li:hover h3,#table-of-contents ul li.selected h3 {
+	color: #b41e21;
+	font-weight: bold;
+}
+
+#table-of-contents ul li p {
+	font-size: 12px;
+	width: 90%;
+	margin-left: 5%;
+	color: #000;
+	padding-bottom: 5px;
+}

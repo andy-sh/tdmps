@@ -1,0 +1,59 @@
+/**
+ * book preloader(预加载器) style
+ *
+ * @version $Id: book.preloader.css 48 2012-02-21 02:34:46Z liqt $
+ */
+
+#preloader {
+	background-color: #eeeeee;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 100000;
+}
+
+#preloader .contents {
+	width: 300px;
+	height: 200px;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	margin-left: -150px;
+	margin-top: -100px;
+	opacity: 0;
+}
+
+#preloader .contents .animation {
+	width: 91px;
+	text-align: center;
+	position: relative;
+	left: 50%;
+	margin-left: -45px;
+}
+
+#preloader .contents .progress {
+	height: 7px;
+	width: 302px;
+	background-color: #fefefe;
+	border-radius: 2px;
+	margin-top: 10px;
+	box-shadow: 0px 1px 3px #ccc;
+	-o-box-shadow: 0px 1px 3px #ccc;
+	-moz-box-shadow: 0px 1px 3px #ccc;
+	-webkit-box-shadow: 0px 1px 3px #ccc;
+}
+
+#preloader .contents .progress .fill {
+	background-color: rgb(215, 70, 75);
+	transition: width .5s ease-out;
+	-o-transition: width .5s ease-out;
+	-moz-transition: width .5s ease-out;
+	-webkit-transition: width .5s ease-out;
+	background-image: gradient(linear, 0% 100%, 0% 0%, from(rgb(175, 40, 45)), to(rgb(215, 70, 75) ) ); /*线性渐变*/
+	background-image: -o-gradient(linear, 0% 100%, 0% 0%, from(rgb(175, 40, 45)), to(rgb(215, 70, 75) ) );
+	background-image: -moz-gradient(linear, 0% 100%, 0% 0%, from(rgb(175, 40, 45)), to(rgb(215, 70, 75) ) );
+	background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, from(rgb(175, 40, 45)), to(rgb(215, 70, 75) ) );
+	border-radius: 2px;
+	height: 7px;
+	width: 0px;
+}

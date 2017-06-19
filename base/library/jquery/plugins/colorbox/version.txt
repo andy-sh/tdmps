@@ -1,0 +1,3 @@
+ColorBox v1.3.17 - a full featured, light-weight, customizable lightbox based on jQuery 1.3+
+
+colorbox.css请按需自定义。

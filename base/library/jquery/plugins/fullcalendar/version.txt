@@ -1,0 +1,11 @@
+NAME:
+
+    	FULLCALENDAR
+
+VERSION: 1.4.7
+
+http://arshaw.com/fullcalendar/
+
+备注：
+*在调用fullcalendar时，避免将table的table-layout属性设为fixed，应设为默认的auto。
+否则fullcalendar的日历宽度（使用jquery的outerWidth函数）自动计算的值会不正确。
