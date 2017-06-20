@@ -15,9 +15,15 @@
 - 支持书籍（包含文字数据及媒体数据）的在线导入、导出功能。
 - 完全基于标准的web规范，采用HTML5技术实现触摸效果的即时仿真渲染。（无需使用flash）
 
-### 兼容的浏览器- Internet Explorer 9.0 +- Firefox 15.0+- Google Chrome18+- Safari 4.0+ - Opera 浏览器10.0
+### 兼容的浏览器
+- Internet Explorer 9.0 +
+- Firefox 15.0+
+- Google Chrome18+
+- Safari 4.0+ 
+- Opera 浏览器10.0
 
-该项目的前端效果参考自[20thingsilearned](http://www.20thingsilearned.com/)。
+该项目的前端效果参考自[20thingsilearned](http://www.20thingsilearned.com/)。
+
 ## demo
 
 demo地址: [http://tdmps.d.matdim.com](http://tdmps.d.matdim.com)
