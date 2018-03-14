@@ -40,11 +40,3 @@ PHP5.3+, MYSQL5.1+, Apache2.0+
 ## 其他
 - 该项目是基于矩维软件自有的PHP框架 *SCAP v2* 进行开发的。
 
-## 联系
-
-- mail: leeqintao@gmail.com
-- QQ: 6463062
-
-## Copyright
-
-Copyright (c) 2015-present, *矩维软件(上海)有限公司*
