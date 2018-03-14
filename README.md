@@ -28,8 +28,6 @@
 
 demo地址: [http://tdmps.d.matdim.com](http://tdmps.d.matdim.com)
 
-admin地址: [http://tdmps.d.matdim.com/login](http://tdmps.d.matdim.com/login), 账号: demo demo
-
 
 ## 安装部署
 
@@ -38,16 +36,6 @@ admin地址: [http://tdmps.d.matdim.com/login](http://tdmps.d.matdim.com/login),
 采用LAMP或WAMP环境.
 
 PHP5.3+, MYSQL5.1+, Apache2.0+
-
-### 数据库配置
-- 在mysql中创建DB，并在`config/default.php`文件修改相关配置：
-
-```
-// 数据库连接参数
-config::set('db_connect', 'default', array('type' => 'mysql', 'host' => 'localhost', 'database' => 'tdmps', 'user' => 'root', 'password' => 'root'), 1);// 默认db连接配置
-```
-
-- 在DB中导入初始数据文件`initial/tdmps.sql`(默认管理端user/pwd: admin/tdmps)。
 
 ## 其他
 - 该项目是基于矩维软件自有的PHP框架 *SCAP v2* 进行开发的。
